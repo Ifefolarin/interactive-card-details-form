@@ -235,10 +235,10 @@ button {
 
   .front-card h3 {
     position: absolute;
-    font-size: 18px;
+    font-size: 20px;
     top: 100px;
     left: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
   }
 
   .front-card p {
@@ -316,7 +316,7 @@ button {
     font-size: 16px;
     top: 90px;
     left: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
 
   .front-card p {
