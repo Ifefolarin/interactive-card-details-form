@@ -32,26 +32,24 @@ export default function App() {
         />
       </div>
 
-      <div className="app-form">
-        {submitted ? (
-          <Completed />
-        ) : (
-          <Form
-            cardName={cardName}
-            cardNumber={cardNumber}
-            cardMonth={cardMonth}
-            cardYear={cardYear}
-            cardCvc={cardCvc}
-            setCardCvc={setCardCvc}
-            setCardMonth={setCardMonth}
-            setCardYear={setCardYear}
-            setCardName={setCardName}
-            setCardNumber={setCardNumber}
-            error={error}
-            onSubmit={handleSubmit}
-          />
-        )}
-      </div>
+      {submitted ? (
+        <Completed />
+      ) : (
+        <Form
+          cardName={cardName}
+          cardNumber={cardNumber}
+          cardMonth={cardMonth}
+          cardYear={cardYear}
+          cardCvc={cardCvc}
+          setCardCvc={setCardCvc}
+          setCardMonth={setCardMonth}
+          setCardYear={setCardYear}
+          setCardName={setCardName}
+          setCardNumber={setCardNumber}
+          error={error}
+          onSubmit={handleSubmit}
+        />
+      )}
     </div>
   );
 }
