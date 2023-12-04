@@ -18,6 +18,7 @@ export default function Form({
       <input
         type="text"
         placeholder="e.g. Jane Appleseed"
+        style={error ? { borderColor: "hsl(0, 100%, 66%)" } : {}}
         minLength={5}
         value={cardName}
         onChange={(e) => setCardName(e.target.value)}
@@ -29,6 +30,7 @@ export default function Form({
       <input
         type="text"
         placeholder="e.g. 1234 5678 9123 000"
+        style={error ? { borderColor: "hsl(0, 100%, 66%)" } : {}}
         maxLength={16}
         pattern="[0-9.]+"
         value={cardNumber.replace(/[^0-9]/g, "")}
@@ -44,6 +46,7 @@ export default function Form({
           <input
             type="text"
             placeholder="MM"
+            style={error ? { borderColor: "hsl(0, 100%, 66%)" } : {}}
             maxLength={2}
             value={cardMonth.replace(/[^0-9]/g, "")}
             onChange={(e) => setCardMonth(e.target.value)}
@@ -51,6 +54,7 @@ export default function Form({
           <input
             type="text"
             placeholder="YY"
+            style={error ? { borderColor: "hsl(0, 100%, 66%)" } : {}}
             maxLength={2}
             value={cardYear.replace(/[^0-9]/g, "")}
             onChange={(e) => setCardYear(e.target.value)}
@@ -65,6 +69,7 @@ export default function Form({
           <input
             type="text"
             placeholder="e.g. 123"
+            style={error ? { borderColor: "hsl(0, 100%, 66%)" } : {}}
             maxLength={3}
             value={cardCvc.replace(/[^0-9]/g, "")}
             onChange={(e) => setCardCvc(e.target.value)}
